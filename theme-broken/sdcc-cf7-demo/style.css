@@ -1,0 +1,87 @@
+/*
+Theme Name: SDCC CF7 Demo
+Theme URI: https://www.youtube.com/@simplifieddevcodecamp
+Author: Simplified Dev Code Camp
+Author URI: https://www.youtube.com/@simplifieddevcodecamp
+Description: A tiny demo theme built for the "Contact Form 7 — Success Message Not Showing" tutorial. BROKEN VERSION: footer.php is missing wp_footer(), so plugin JavaScript (including Contact Form 7's) never loads. Compare with ../theme-fixed/.
+Version: 1.0.0
+Requires at least: 5.8
+Tested up to: 7.1
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sdcc-cf7-demo
+*/
+
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+	color: #1c2733;
+	background: #f4f6f9;
+	line-height: 1.55;
+}
+a { color: #2f81f7; }
+
+.site-header {
+	background: #0d1526;
+	color: #fff;
+	padding: 18px 0;
+}
+.site-header .wrap,
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 24px; }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
+.site-title { font-size: 24px; font-weight: 700; color: #fff; text-decoration: none; }
+.site-title span { color: #2f81f7; }
+.main-nav ul { list-style: none; display: flex; gap: 26px; margin: 0; padding: 0; }
+.main-nav a { color: #cfd8e3; text-decoration: none; font-size: 16px; }
+.main-nav a:hover, .main-nav .current-menu-item a { color: #fff; }
+
+.hero {
+	background: linear-gradient(120deg, #0d1526, #12315e);
+	color: #fff;
+	padding: 52px 0 44px;
+}
+.hero h1 { margin: 0 0 8px; font-size: 38px; }
+.hero p { margin: 0; color: #b9c9dd; font-size: 18px; max-width: 620px; }
+
+.content { padding: 40px 0 56px; }
+.card {
+	background: #fff;
+	border: 1px solid #dde4ec;
+	border-radius: 12px;
+	padding: 30px 34px;
+	box-shadow: 0 2px 10px rgba(13, 21, 38, .05);
+}
+
+/* Contact Form 7 */
+.wpcf7 label { font-weight: 600; display: block; margin: 14px 0 4px; }
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+	width: 100%;
+	padding: 11px 13px;
+	border: 1px solid #b9c4d0;
+	border-radius: 8px;
+	font: inherit;
+	background: #fbfcfe;
+}
+.wpcf7 input[type="submit"] {
+	margin-top: 18px;
+	background: #2f81f7;
+	color: #fff;
+	border: 0;
+	border-radius: 8px;
+	padding: 12px 30px;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+.wpcf7 input[type="submit"]:hover { background: #1f6ae0; }
+
+.site-footer {
+	background: #0d1526;
+	color: #8fa1b5;
+	padding: 22px 0;
+	font-size: 14px;
+}
